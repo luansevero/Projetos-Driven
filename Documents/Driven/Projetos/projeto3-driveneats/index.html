@@ -21,7 +21,7 @@
         <div class="pratos">
             <h1 class="chamativo">Primeiro, seu prato</h1>
             <div class="items-container">
-                <div class="prato">
+                <div id="prato-1" class="prato" onclick="seletorPrato(1)">
                     <img src="/imagens/pratos/frango_yin_yang 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Frango Yin Yang</h1>
@@ -29,7 +29,7 @@
                         <h2 class="valor">R$ 14,90</h2>
                     </div>
                 </div>
-                <div class="prato">
+                <div id="prato-2" class="prato" onclick="seletorPrato(2)">
                     <img src="/imagens/pratos/frango_yin_yang 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Frango Yin Yang</h1>
@@ -37,7 +37,7 @@
                         <h2 class="valor">R$ 14,90</h2>
                     </div>
                 </div>
-                <div class="prato">
+                <div id="prato-3" class="prato" onclick="seletorPrato(3)">
                     <img src="/imagens/pratos/frango_yin_yang 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Frango Yin Yang</h1>
@@ -51,7 +51,7 @@
         <div class="bebidas">
             <h1 class="chamativo">Agora, sua bebida</h1>
             <div class="items-container">
-                <div class="bebida">
+                <div  id="bebida-1" class="bebida" onclick="seletorBebida(1)">
                     <img src="/imagens/bebidas/coquinha_gelada 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Coquinha gelada</h1>
@@ -59,7 +59,7 @@
                         <h2 class="valor">R$ 4,90</h2>
                     </div>
                 </div>
-                <div class="bebida">
+                <div  id="bebida-2" class="bebida" onclick="seletorBebida(2)">
                     <img src="/imagens/bebidas/coquinha_gelada 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Coquinha gelada</h1>
@@ -67,7 +67,7 @@
                         <h2 class="valor">R$ 4,90</h2>
                     </div>
                 </div>
-                <div class="bebida">
+                <div id="bebida-3" class="bebida" onclick="seletorBebida(3)">
                     <img src="/imagens/bebidas/coquinha_gelada 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Coquinha gelada</h1>
@@ -80,8 +80,8 @@
 
         <div class="sobremesas">
             <h1 class="chamativo">Por fim, sua sobremesa</h1>
-            <div class="items-container">
-                <div class="sobremesa">
+            <div  class="items-container" >
+                <div id="sobremesa-1" class="sobremesa" onclick="seletorSobremesa(1)">
                         <img src="/imagens/sobremesas/pudim 1.png">
                         <div class="layout-container">
                             <h1 class="nome-produto">Pudim</h1>
@@ -89,7 +89,7 @@
                             <h2 class="valor">R$ 7,90</h2>
                         </div>
                 </div>
-                <div class="sobremesa">
+                <div id="sobremesa-2" class="sobremesa" onclick="seletorSobremesa(2)">
                     <img src="/imagens/sobremesas/pudim 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Pudim</h1>
@@ -98,7 +98,7 @@
                         <h2 class="valor">R$ 7,90</h2>
                     </div>
                 </div>
-                <div class="sobremesa">
+                <div id="sobremesa-3" class="sobremesa" onclick="seletorSobremesa(3)">
                     <img src="/imagens/sobremesas/pudim 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Pudim</h1>
@@ -111,7 +111,7 @@
     </main>
 
     <footer>
-        <div class="botao-pedido" onclick="fecharPedido()"><span>Selecione os 3 itens
+        <div class="botao-pedido" onclick="fecharPedido()"><span id="mudar">Selecione os 3 itens
             para fechar o pedido</span></div>
     </footer>
 
