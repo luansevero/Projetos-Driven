@@ -1,0 +1,126 @@
+@media (max-width: 644px){
+    body section{
+        width: 294px;
+        
+    }
+    body div{
+        width: 344px;
+        margin: 0 auto;
+    }
+    /*Header*/
+    .container-menu{
+        width: 70%;
+    }
+    /*Feed-de-Notícias*/
+    .feed{
+        width: 344px;
+    }
+    .feed-g1-news > div,
+    .feed-ge-news ,
+    .feed-gshow-news {
+        flex-direction: column;
+    }
+    .feed-g1-news > div > div,
+    .feed-ge-news > div,
+    .feed-ge-news > div:first-child,
+    .feed-gshow-news > div,
+    .feed-gshow-news > div:first-child{
+        padding: 20px 0px 20px 0px;
+        border-top: 1px solid #e8edef;}
+    .feed-g1-news > div{
+        padding: 0px 0px 0px 0px;
+    }
+    .feed-g1-news,
+    .feed-ge-news,
+    .feed-gshow-news{
+        width: 344px;
+        margin-top: 0px;
+        margin: 0 auto;
+    }
+    .feed-g1-news img,
+    .feed-ge-news img,
+    .feed-gshow-news img{
+        width: 120px;
+        height: 67px;
+        border-radius: 3px;}
+    
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /*Texto*/
+    body h1{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.028em;
+    }
+    body h2{
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.068em;
+    }
+    body h3{
+        font-size: 18px;
+    }
+    body p{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+    }
+    /*Tamanhos*/
+    .feed-g1-news > div:first-child{
+        padding: 0px 0px 8px 0px;
+    }
+    .feed-g1-news h3,
+    .feed-ge-news h3,
+    .feed-gshow-news h3{
+        width: 214px;
+        margin-top: 0
+    }
+    body h1,
+    body h2,
+    .sem-img h3,
+    .feed-g1-news p,
+    .feed-ge-news p,
+    .feed-gshow-news p{
+        width: 344px;
+    }
+    body h1{
+        margin-bottom: 8px;
+    }
+    /*Cores*/
+    .feed-g1-news h1,
+    .feed-g1-news h2,
+    .feed-g1-news h3,
+    .feed-g1-news p{
+        color: #CD150B;
+    }
+    .feed-ge-news h1,
+    .feed-ge-news h2,
+    .feed-ge-news h3,
+    .feed-ge-news p{
+        color: #06AA48;
+    }
+    .feed-gshow-news h1,
+    .feed-gshow-news h2,
+    .feed-gshow-news h3,
+    .feed-gshow-news p{
+        color: #FF8203;
+    }
+    
+    /*Excluidos*/
+    body h4,
+    .container-menu a:nth-child(6),
+    .container-menu a:nth-child(7),
+    .container-menu a:nth-child(8){
+        display: none;
+    }
+}
+
+@media (max-width: 420px){
+    .container-menu{
+        width: 294px;
+    }
+}
