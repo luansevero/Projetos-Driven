@@ -18,9 +18,13 @@ let systemsobremesa = 0;
 let arraypratos = ["", "", ""];
 let arrayvalorespratos = ["", "", ""];
 var quantidadepratos = document.querySelectorAll("div.prato");
+//Finalizar Pedido
+let botaoverde = document.getElementById('botão')
+let botaotexto = document.getElementById('botão-texto')
 
 function seletorPrato(nprato){
     if(systemprato == nprato){
+        botaotexto.innerHTML = `Selecione os 3 itens para fechar o pedido`
         document.getElementById(`prato-${nprato}`).style.boxShadow = "inset 0px 0px 10px -4px #00000040";
         document.getElementById(`selecionado-prato-${nprato}`).style.display = "none"
         systemprato = 0
@@ -32,6 +36,7 @@ function seletorPrato(nprato){
         document.getElementById(`sobremesa-${systemsobremesa}`).style.boxShadow = "inset 0px 0px 10px -4px #00000040";
         document.getElementById(`selecionado-sobremesa-${systemsobremesa}`).style.display = "none"
         systemsobremesa = 0
+        botaoverde.style.backgroundColor = "#CBCBCB";
     } else {
         systemprato = nprato
         valorprato = arrayvalorespratos[nprato - 1]
@@ -42,9 +47,10 @@ function seletorPrato(nprato){
                     document.getElementById(`selecionado-prato-${i}`).style.display = "none"  
             } else {
                     document.getElementById(`prato-${nprato}`).style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-                    document.getElementById(`selecionado-prato-${i}`).style.display = "flex"    
+                    document.getElementById(`selecionado-prato-${i}`).style.display = "flex"  
             }
         }
+        botaotexto.innerHTML = `Selecione mais 2 itens para fechar o pedido`
     }
 }
 
@@ -55,6 +61,7 @@ function seletorBebida(nbebida){
     if(systemprato <= 0){
         alert(`Selecione um Prato antes`)
     } else if(systembebida == nbebida){
+        botaotexto.innerHTML = `Selecione mais 2 itens para fechar o pedido` 
         document.getElementById(`bebida-${nbebida}`).style.boxShadow = "inset 0px 0px 10px -4px #00000040";
         document.getElementById(`selecionado-bebida-${nbebida}`).style.display = "none"
         systembebida = 0
@@ -63,6 +70,7 @@ function seletorBebida(nbebida){
         document.getElementById(`sobremesa-${systemsobremesa}`).style.boxShadow = "inset 0px 0px 10px -4px #00000040";
         document.getElementById(`selecionado-sobremesa-${systemsobremesa}`).style.display = "none"
         systemsobremesa = 0
+        botaoverde.style.backgroundColor = "#CBCBCB";
     } else {
         systembebida = nbebida
         valorbebida = arrayvaloresbebidas[nbebida - 1]
@@ -76,6 +84,7 @@ function seletorBebida(nbebida){
                     document.getElementById(`selecionado-bebida-${i}`).style.display = "flex"   
             }
         }
+        botaotexto.innerHTML = `Selecione mais 1 item para fechar o pedido` 
     }
 }
 
@@ -95,7 +104,8 @@ function seletorSobremesa(nsobremesa){
             systemsobremesa = 0
             sobremesa = ""
             valorsobremesa = 0
-            
+            botaoverde.style.backgroundColor = "#CBCBCB";
+            botaotexto.innerHTML = `Selecione mais 1 item para fechar o pedido` 
         } else {
             systemsobremesa = nsobremesa
             valorsobremesa = arrayvaloressobremesas[nsobremesa - 1]
@@ -109,6 +119,14 @@ function seletorSobremesa(nsobremesa){
                         document.getElementById(`selecionado-sobremesa-${i}`).style.display = "flex"    
                 }
             }
+            botaoverde.style.backgroundColor = "green";
+            botaotexto.innerHTML = `Finalizar Pedido` 
         }
+    }
+}
+
+function finalizarPedido(){
+    if(botaoverde.style.backgroundColor == "green"){
+        
     }
 }
