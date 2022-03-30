@@ -1,0 +1,20 @@
+@media (max-width: 935px){
+
+
+
+
+
+    .main-body-right{
+        display: none;
+    }
+    /*Header*/
+    .menu{
+        margin: 0 20px;
+    }
+    /*Main-Body*/
+    .main-body-container{
+        width: 614px;
+    }
+
+
+}

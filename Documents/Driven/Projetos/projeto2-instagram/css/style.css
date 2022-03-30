@@ -1,0 +1,382 @@
+/*Configurações Gerais(Ou aplicando em mais de uma section)*/
+*{
+    box-sizing: border-box;}
+body{
+    font-family: 'Roboto', sans-serif;}
+ion-icon{
+    width: 22px;
+    height: 22px;}
+input{
+    text-align: center;
+}
+
+/*Configurações Header*/
+header{
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;}
+.menu{
+    width: 935px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;}
+.menu > div{
+    display: flex;}
+    /*Header/ Left*/
+.menu-left{
+    height: 22px;
+    width: 148px;}
+.menu-icon-instagram{
+    border-right: 1px solid #dbdbdb;
+    padding-right: 10px;
+    margin-right: 10px;}
+    /*Heander/ Center*/
+.menu-center{
+    width: 215px;
+    height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;}
+    /*Header/ Right*/
+.menu-right > div{
+    margin-left: 20px;}
+.menu-right div:first-child{
+    margin-left: 0px;}
+
+
+
+
+
+
+/*Configurações Main-Body*/
+.container{
+    background-color: #fafafa;
+    height: 100%;}
+.main-body-container{
+    width: 935px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 34px;}
+.main-body-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 88px;
+    width: 614px;}
+    /*Main-Body/ Left/ Stories START*/
+.main-body-stories{
+    width: 614px;
+    height: 118px;
+    border: 1px solid #dbdbdb;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 18px 18px 14px 18px;
+    overflow: hidden;
+    position: relative;}
+.main-body-stories > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;}
+.main-body-stories div:first-child{
+    margin-left: 0px;}
+.main-body-stories div:last-child{
+    margin-right: 0px;}
+.stories-background-picture{
+    position: relative;}
+.stories-profile-picture{
+    position: absolute;
+    top: 5px;
+    left: 5px;}
+.stories-username{
+    margin-top: 1px;
+    width: 78px;
+    height: 19px;
+    text-align: center;}
+.stories-next-button{
+    position: absolute;
+    left: 578px;
+    align-items: center;}
+.stories-next-button ion-icon{
+    width: 26px;
+    height: 26px;
+    color: white;}
+.stories-next-button ion-icon:first-child{
+    position: relative;}
+    /*Main-Body/ Left/ Stories END*/
+
+
+    /*Main-Body/ Left/ Posts START*/
+        /*Config. Gerais START*/
+.main-body-posts{
+    margin-top: 24px;
+    width: 614px;}
+.main-body-posts > div{
+    background-color: #FFFFFF;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 614px;
+    margin-bottom: 60px;}
+.main-body-posts div:last-child{
+    margin-bottom: 0px;}
+        /*Config. Gerais END*/
+        /*Post/ Top START*/
+.post-top-bar{ 
+    display: flex;
+    height: 61px;
+    padding: 15px 17px 13px 17px;
+    justify-content: space-between;
+    align-items: center;}
+.post-top-bar-left{
+    display: flex;
+    align-items: center;
+    height: 32px;}
+.post-profile-picture{
+    margin-right: 15px;}
+.post-profile-picture img{
+    width: 32px;
+    height: 32px;
+}
+        /*Post/ Top END*/
+        /*Post/ Center START*/
+.post-img{
+    height: 612px;
+    width: 614px;}
+.post-img img{
+    height: 612px;
+    width: 612px;
+}
+        /*Post/ Center END*/
+        /*Post/ Bottom START*/
+.post-bottom-bar-interactions{
+    padding: 10px 15px 11px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+.post-bottom-bar-interactions div{
+    display: flex;}
+.post-interactions-left div{
+    margin-right: 13px;}
+.post-bottom-bar-interactions div:last-child{
+    margin-right: 0px;}
+.post-bottom-bar-likes{
+    padding: 0px 17px 13px 17px;
+    display: flex;}
+.post-bottom-like-container{
+    height: 20px;
+    display: flex;
+    box-sizing: border-box;}
+.post-like-description{
+    margin-top: 3px;}
+.frist-like-profile-picture{
+    margin-right: 5px;}
+.post-like-description{
+    display: flex;
+}
+.comments-maded-container{
+    display: flex;
+    padding: 0 17px;
+    align-items: center;
+    flex-direction: column;
+}
+.comments-maded-container > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 0px;
+}
+.comments-maded-container > div:last-child{
+    margin-bottom: 15px;
+}
+.maded-comment-text{
+    display: flex;
+
+}
+.maded-comment-like-button ion-icon{
+    width: 16px;
+    height: 16px;}
+
+.frist-like-profile-picture img{
+    height: 20px;
+    width: 20px;}
+    
+.post-bottom-bar-make-a-comment{
+    height: 53px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dbdbdb;
+    padding: 6px 16px;}
+.comments-icon{
+    padding: 8px 16px 8px 0px;}
+.comments-icon ion-icon{
+    width: 26px;
+    height: 26px;}
+.make-a-comment input{
+    text-align: left;
+    width: 490px;
+    border: none;}
+.container-comments{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.comment-publish{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #B2DFFC;}
+.comment-publish:hover{
+    color: #0095F6;
+    transition-duration: 300ms;}
+
+        /*Post/ Bottom END*/
+    /*Main-Body/ Left/ Posts END*/
+
+
+
+/*Main-Body/ Right/ Side-Bar*/
+.main-body-right{
+    top: 110px;
+    display: flex;
+    width: 293px;
+    height: 100%;
+    position: sticky;}
+.sugestions-profile-logged-container{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;}
+.sugestions-profile-logged-picture{
+        height: 56px;}
+.sugestions-profile-logged-picture img{
+    margin-right: 17px;}
+.sugestions-for-you{
+    display: flex;
+    flex-direction: column;}
+.sugestions-for-you-text{
+    width: 293px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;}
+.sugestions-for-you-profiles{
+    margin-bottom: 33px;}
+.sugestions-for-you-profiles > div{
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;}
+.sugestions-for-you-profiles div:last-child{
+    margin-bottom: 0px;}
+.sugestions-profile-picture-name-username{
+    height: 32px;
+    display: flex;}
+.sugestions-profile-picture{
+    margin-right: 11px;}
+.sugestions-profile-username-name{
+    height: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+.sugestions-configs{
+    margin-bottom: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Configuração de Texto*/
+body h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;}
+body h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;}
+body h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;}
+body h4,
+body h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;}
+
+/*Header*/
+.menu-center{
+    color: #979797;
+}
+/*Stories*/
+.main-body-stories h1{
+    color: #262626;}
+
+/*Post*/
+.post-bottom-bar h1{
+    font-weight: 300;
+    color: #000000;}
+/*Comments Hover*/
+h4:hover{
+    text-decoration: underline;}
+
+/*Side-Bar*/
+.main-body-sugestions h2{
+    color: #8e8e8e;
+    font-weight: 500;}
+.sugestions-profile-logged h2{
+    font-weight: 300;}
+.sugestions-for-you-right h2{
+    text-align: right;
+    color: #262626;}
+.sugestions-for-you-profiles h1{
+    height: 14px;}
+.sugestions-for-you-profiles h2{
+    height: 11px;}
+.sugestions-follow h2{
+    font-weight: 500;
+    text-align: right;
+    color: #139ef2;}
+.post-like-description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;}
+}
+/*Mobile-Version   Display:none;*/
+.bottom-bar,
+.mobile-menu-direct{
+    display: none;}
