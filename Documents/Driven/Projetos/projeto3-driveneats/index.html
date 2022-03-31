@@ -113,7 +113,7 @@
                     <div class="layout-container">
                         <h1 class="nome-produto">Dolly Guaraná</h1>
                         <p class="descrição">Garrafas de 2L</p>
-                        <h2 class="valor">R$ 4,90</h2>
+                        <h2 class="valor">R$ 8,90</h2>
                     </div>
                     <ion-icon id="selecionado-bebida-5" name="checkmark-circle"></ion-icon>
                 </div>
@@ -162,6 +162,35 @@
             </div>
         </div>
     </main>
+    <section id="pedidofinalizado" class="pedidofinalizado">
+            <div class="pedido-container">
+                <div class="header-pedido">
+                    <h1>Confirme seu pedido</h1>
+                </div>
+                <div class="main-pedido">
+                    <div class="main-left">
+                        <h3 id="prato-pedido" class="prato-pedido">a</h3>
+                        <h3 id="bebida-pedida" class="bebida-pedida">a</h3>
+                        <h3 id="sobremesa-pedida" class="sobremesa-pedida">a</h3>
+                        <h2 class="total">Total</h2>
+                    </div>
+                    <div class="main-right">
+                        <h3 id="prato-pedido-valor" class="prato-pedido-valor"></h3>
+                        <h3 id="bebida-pedida-valor" class="bebida-pedida-valor"></h3>
+                        <h3 id="sobremesa-pedida-valor" class="sobremesa-pedida-valor"></h3>
+                        <h2 id="subtotal" class="subtotal">a</h2>
+                    </div>
+                </div>
+                <div class="footer-pedido">
+                    <div class="botao-pedir" onclick="pedidoFinalizado()">
+                        <h1>Tudo certo, pode vir</h1>
+                    </div>
+                    <div class="botao-cancelar" onclick="cancelar()">
+                        <h1>Cancelar</h1>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <footer>
         <div id="botão" class="botao-pedido" onclick="finalizarPedido()"><span id="botão-texto">Selecione os 3 itens
@@ -169,8 +198,6 @@
     </footer>
 
     <script src="script.js"></script>
-
-
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

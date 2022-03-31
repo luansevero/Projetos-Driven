@@ -175,4 +175,111 @@ span{
     letter-spacing: 0.018em;
     color: #FFFFFF;  
 }
+/*Pedido Finalizado!*/
+section{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
+.pedido-container{
+    width: 377px;
+    height: 353px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    position: relative;
+}
+.header-pedido{
+    padding-top: 21px;
+    padding-bottom: 28px;
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Main-Pedido*/
+.main-pedido{
+    
+    display: flex;
+    margin: 0px 26px 24px 26px;
+    justify-content: space-between;
+}
+.main-pedido > div{
+    display: flex;
+    flex-direction: column;
+}
+/*footer-pedido*/
+.botao-pedir{
+    position: absolute;
+    width: 329px;
+    height: 52px;
+    top: 247px;
+    left: 24px;
+    right: 24px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao-cancelar{
+    width: 329px;
+    height: 52px;
+    position: absolute;
+    top: 299px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/*Texto*/
+section h1,
+section h3,
+section h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0.018em;
+}
+.header-pedido h1{
+    font-weight: 700;
+}
+.subtotal,
+.main-pedido h2{
+    margin-top: 13px;
+    font-weight: 700;
+}
+.prato-pedido-valor,
+.bebida-pedida-valor,
+.sobremesa-pedida-valor,
+.subtotal{
+    text-align: right;
+}
+.main-pedido h3{
+    margin-top: 13px;
+    font-weight: 400;
+}
+.main-left h3:first-child,
+.main-right h3:first-child{
+    margin-top: 0px;
+}
+
+.botao-pedir h1{
+    font-weight: 700;
+    color: #50D074;
+}
