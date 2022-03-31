@@ -26,7 +26,7 @@ let somadosvalores = 0
 
 // Seletor do Prato
 let arraypratos = ["Frango Yin Yang", "Executivo - Carne", "Executivo - Frango", "Strogonoff", "Feijoada"];
-let arrayvalorespratos = ["21.90", "18.90", "16.90", "22.90", "14.90"];
+let arrayvalorespratos = ["14.90", "18.90", "16.90", "22.90", "14.90"];
 var quantidadepratos = document.querySelectorAll("div.prato");
 function seletorPrato(nprato){
     systemprato = nprato
@@ -105,6 +105,7 @@ let pratoPedidoValor = document.getElementById(`prato-pedido-valor`)
 let bebidaPedidaValor = document.getElementById(`bebida-pedida-valor`)
 let sobremePedidaValor = document.getElementById(`sobremesa-pedida-valor`)
 let subtotal = document.getElementById("subtotal")
+let total = 0
 function finalizarPedido(){
     if(botaoverde.style.backgroundColor == "green"){
         document.getElementById(`pedidofinalizado`).style.display = 'flex'
@@ -114,13 +115,16 @@ function finalizarPedido(){
         bebidaPedidaValor.innerHTML = valorbebida.toFixed(2)
         sobremesaPedida.innerHTML = sobremesa
         sobremePedidaValor.innerHTML = valorsobremesa.toFixed(2)
-        subtotal.innerHTML = `R$ ${(valorprato + valorsobremesa + valorbebida).toFixed(2)}`
+        total = `R$ ${(valorprato + valorsobremesa + valorbebida).toFixed(2)}`
+        subtotal.innerHTML = total
     }
 }
 function pedidoFinalizado(){
-    let nome = prompt(`Qual o seu nome?`)
-    let endereco = prompt(`${nome}, qual o seu endereço?`)
-
+    let nome = prompt(`Qual o seu nome?`);
+    let endereço = prompt(`${nome}, qual o seu endereço?`);
+    let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: ${total}\n\nNome: ${nome}\nEndereço: ${endereço}`
+    mensagem = window.encodeURIComponent(mensagem);
+    window.open(`https://wa.me/5521969592572?text=${mensagem}`);
 }
 function cancelar(){
     document.getElementById(`pedidofinalizado`).style.display = 'none';
