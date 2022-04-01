@@ -84,7 +84,7 @@ main > div:first-child{
     border-radius: 9px;
     position: relative;
 }
-.selecionado{
+.selected{
     display: flex;
     flex-direction: column;
     margin-left: 17px;
@@ -114,7 +114,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     height: 100%;
     width: 100%;
 }
@@ -154,6 +153,9 @@ ion-icon{
     bottom: 14px;
     right: 11px;
 }
+.selected-icon{
+    display: flex;
+}
 /*Footer*/
 footer{
     width: 100%;
@@ -167,7 +169,7 @@ footer{
     bottom: 0;
     left: 0;
 }
-.botao-pedido{
+.order-button{
     width: 88%;
     height: 66.3%;
     background-color: #CBCBCB;
@@ -176,7 +178,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
-span{
+.button-text{
     width: 60%;
     font-family: 'Roboto';
     font-style: normal;
@@ -276,9 +278,7 @@ section h2{
     margin-top: 13px;
     font-weight: 700;
 }
-.prato-pedido-valor,
-.bebida-pedida-valor,
-.sobremesa-pedida-valor,
+.item-select-price,
 .subtotal{
     text-align: right;
 }

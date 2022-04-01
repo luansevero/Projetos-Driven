@@ -21,50 +21,50 @@
         <div class="pratos">
             <h1 class="chamativo">Primeiro, seu prato</h1>
             <div class="items-container">
-                <div class="prato" onclick="seletorPrato(this)">
+                <div class="prato" onclick="select(this)">
                     <img src="/imagens/pratos/frango_yin_yang 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Frango Yin Yang</h1>
                         <p class="descrição">Um pouco de batata, um pouco de salada</p>
                         <h2 class="preço">R$ 14,90</h2>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado"  name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="prato" onclick="seletorPrato(this)">
+                <div class="prato" onclick="select(this)">
                     <img src="/imagens/pratos/Executivo - Carne.jpg">
                     <div class="layout-container">
                         <h1 class="nome-produto">Executivo - Carne</h1>
                         <p class="descrição">Arroz, carne, farofa e salada e batata-frita</p>
                         <h2 class="preço">R$ 18,90</h2>
                     </div>
-                    <ion-icon id="selecionado-prato-2" name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado"  name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="prato" onclick="seletorPrato(this)">
+                <div class="prato" onclick="select(this)">
                     <img src="/imagens/pratos/executivo-frango.jpg">
                     <div class="layout-container">
                         <h1 class="nome-produto">Executivo - Frango</h1>
                         <p class="descrição">Arroz, batata-frita, salada e frango</p>
                         <h2 class="preço">R$ 16,90</h2>
                     </div>
-                    <ion-icon id="selecionado-prato-3" name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado"  name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="prato" onclick="seletorPrato(this)">
-                    <img src="/imagens//pratos/Strogonoff.jpg">
+                <div class="prato" onclick="select(this)">
+                    <img src="/imagens/pratos/Strogonoff.jpg">
                     <div class="layout-container">
                         <h1 class="nome-produto">Strogonoff</h1>
                         <p class="descrição">Arroz, batata palha e Strogonoff</p>
                         <h2 class="preço">R$ 22,90</h2>
                     </div>
-                    <ion-icon id="selecionado-prato-4" name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado"  name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="prato" onclick="seletorPrato(this)">
+                <div class="prato" onclick="select(this)">
                     <img src="/imagens/pratos/feijoada.jpg">
                     <div class="layout-container">
                         <h1 class="nome-produto">Feijoada</h1>
                         <p class="descrição">Acompanha porção de arroz, farofa e batata-frita</p>
-                        <h2 class="preço">R$ 14,90</h2>
+                        <h2 class="preço">R$ 24,90</h2>
                     </div>
-                    <ion-icon id="selecionado-prato-5" name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado"  name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
@@ -72,23 +72,50 @@
         <div class="bebidas">
             <h1 class="chamativo">Agora, sua bebida</h1>
             <div class="items-container">
-                <div class="bebida" onclick="seletorBebida(this)">
+                <div class="bebida" onclick="select(this)">
                     <img src="/imagens/bebidas/coquinha_gelada 1.png">
                     <div class="layout-container">
                         <h1 class="nome-produto">Coca-Cola</h1>
                         <p class="descrição">Lata de 350ml</p>
                         <h2 class="preço">R$ 5,90</h2>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="bebida" onclick="seletorBebida(this)">
-                    <img src="/imagens/bebidas/coquinha_gelada 1.png">
+                <div class="bebida" onclick="select(this)">
+                    <img src="/imagens/bebidas/agua.jpg">
                     <div class="layout-container">
-                        <h1 class="nome-produto">Coca-Cola</h1>
-                        <p class="descrição">Lata de 350ml</p>
+                        <h1 class="nome-produto">Água</h1>
+                        <p class="descrição">Garrafa de 500ml</p>
+                        <h2 class="preço">R$ 2,90</h2>
+                    </div>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="bebida" onclick="select(this)">
+                    <img src="/imagens/bebidas/H20H!.jpg">
+                    <div class="layout-container">
+                        <h1 class="nome-produto">H20H!</h1>
+                        <p class="descrição">Garrafa de 500ml</p>
                         <h2 class="preço">R$ 5,90</h2>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="bebida" onclick="select(this)">
+                    <img src="/imagens/bebidas/bebida - matte-leao-copo.jpg">
+                    <div class="layout-container">
+                        <h1 class="nome-produto">Matte-Leão</h1>
+                        <p class="descrição">Copo de 300ml</p>
+                        <h2 class="preço">R$ 4,90</h2>
+                    </div>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="bebida" onclick="select(this)">
+                    <img src="/imagens/bebidas/DOLLY.jpg">
+                    <div class="layout-container">
+                        <h1 class="nome-produto">Dolly Guaraná</h1>
+                        <p class="descrição">O Melhor!</br>Garrafa de 2L</p>
+                        <h2 class="preço">R$ 7,90</h2>
+                    </div>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
                 </div>
 
             </div>
@@ -97,44 +124,62 @@
         <div class="sobremesas">
             <h1 class="chamativo">Por fim, sua sobremesa</h1>
             <div  class="items-container" >
-                <div class="sobremesa" onclick="seletorSobremesa(this)">
+                <div class="sobremesa" onclick="select(this)">
                         <img src="/imagens/sobremesas/pudim 1.png">
                         <div class="layout-container">
                             <h1 class="nome-produto">Pudim</h1>
                             <p class="descrição">Apenas pudim</p>
                             <h2 class="preço">R$ 7,90</h2>
                         </div>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="sobremesa" onclick="seletorSobremesa(this)">
+                <div class="sobremesa" onclick="select(this)">
                     <img src="/imagens/sobremesas/Torta de Limão.jpg">
                     <div class="layout-container">
                         <h1 class="nome-produto">Torta de Limão</h1>
                         <p class="descrição">Fatia de torta de limão</p>
                         <h2 class="preço">R$ 9,90</h2>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="sobremesa" onclick="select(this)">
+                    <img src="/imagens/sobremesas/Mousse de maracuja.jpg">
+                    <div class="layout-container">
+                        <h1 class="nome-produto">Mousse de Maracujá</h1>
+                        <p class="descrição">Pote de Mossse</p>
+                        <h2 class="preço">R$ 11,90</h2>
+                    </div>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="sobremesa" onclick="select(this)">
+                    <img src="/imagens/sobremesas/lamus.png">
+                    <div class="layout-container">
+                        <h1 class="nome-produto">Brownie</h1>
+                        <p class="descrição">Sabor chocolate</p>
+                        <h2 class="preço">R$ 5,90</h2>
+                    </div>
+                    <ion-icon class="icone-selecionado" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
     </main>
-    <section id="pedidofinalizado" class="pedidofinalizado">
+    <section class="pedidofinalizado">
             <div class="pedido-container">
                 <div class="header-pedido">
                     <h1>Confirme seu pedido</h1>
                 </div>
                 <div class="main-pedido">
                     <div class="main-left">
-                        <h3  class="prato-pedido">a</h3>
-                        <h3 class="bebida-pedida">a</h3>
-                        <h3 class="sobremesa-pedida">a</h3>
+                        <h3 class="item-select-name"></h3>
+                        <h3 class="item-select-name"></h3>
+                        <h3 class="item-select-name"></h3>
                         <h2 class="total">Total</h2>
                     </div>
                     <div class="main-right">
-                        <h3 class="prato-pedido-valor"></h3>
-                        <h3 class="bebida-pedida-valor"></h3>
-                        <h3 class="sobremesa-pedida-valor"></h3>
-                        <h2 class="subtotal">a</h2>
+                        <h3 class="item-select-price"></h3>
+                        <h3 class="item-select-price"></h3>
+                        <h3 class="item-select-price"></h3>
+                        <h2 class="subtotal"></h2>
                     </div>
                 </div>
                 <div class="footer-pedido">
@@ -149,7 +194,7 @@
     </section>
 
     <footer>
-        <div id="botão" class="botao-pedido" onclick="finalizarPedido()"><span id="botão-texto">Selecione os 3 itens
+        <div class="order-button" onclick="finalizarPedido()"><span  class="button-text">Selecione os 3 itens
             para fechar o pedido</span></div>
     </footer>
 
