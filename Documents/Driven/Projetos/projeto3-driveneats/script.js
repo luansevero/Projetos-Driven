@@ -62,7 +62,7 @@ function pedidoFinalizado(){
     const name = prompt(`Qual é o seu nome?`)
     const adress = prompt(`Qual o endereço da entrega?`)
     let msg = `Olá, gostaria de fazer o pedido:\n- Prato: ${confirmItem[0].innerHTML}\n- Bebida: ${confirmItem[1].innerHTML}\n- Sobremesa: ${confirmItem[2].innerHTML}\nTotal: ${total.innerHTML}\n\nNome: ${name}\nEndereço: ${adress}`
-    mensagem = window.encodeURIComponent(msg);
+    msg = window.encodeURIComponent(msg);
     window.open(`https://wa.me/5521969592572?text=${msg}`);
 }
 //Função para cancelar a compra!(bônus do Projeto)
