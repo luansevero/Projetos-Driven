@@ -13,6 +13,7 @@ const buttonText = document.querySelector(".button-text");
 //Dados da Confirmação do Pedido
 const confirmscreen = document.querySelector(`.pedidofinalizado`)
 //Selecionar elementos
+    let counter = 0
 function select(element){
     const itemtype = element.classList[0]
     const allitems = document.querySelectorAll(`.${itemtype}`)
@@ -22,33 +23,37 @@ function select(element){
         if(allitems[i].classList.contains("selected")){
             allitems[i].classList.remove("selected")
             allitems[i].querySelector(`.icone-selecionado`).classList.remove("selected-icon")
+            counter--
         }
+        
     }
     element.querySelector(".icone-selecionado").classList.add("selected-icon")
     element.classList.add("selected")
+    counter++
     if(itemtype == "prato"){
         confirmItem[0].innerHTML = itemName 
         confirmPrice[0].innerHTML = Number(price).toFixed(2)
-        pratoSelecionado = true
         orderDone()
     } else if (itemtype == "bebida"){
         confirmItem[1].innerHTML = itemName
         confirmPrice[1].innerHTML = Number(price).toFixed(2)
-        bebidaSelecionada = true
         orderDone()
     } else {
         confirmItem[2].innerHTML = itemName
         confirmPrice[2].innerHTML = Number(price).toFixed(2)
-        sobremesaSelecionada = true
         orderDone()
     }
 }
 //Função para mudar a cor do botão e texto!
 function orderDone(){
-    if(pratoSelecionado && bebidaSelecionada && sobremesaSelecionada){
+    if(counter >= 3){
         button.style.backgroundColor = "green";
         buttonText.innerHTML = "Finalizar Pedido"
         total.innerHTML = `R$ ${(Number(confirmPrice[0].innerHTML) + Number(confirmPrice[1].innerHTML) + Number(confirmPrice[2].innerHTML)).toFixed(2)}`
+    } else if(counter == 2){
+        buttonText.innerHTML = "Selecione mais 1 pedido"
+    } else {
+        buttonText.innerHTML = "Selecione mais 2 pedidos"
     }
 }
 //Função para aparecer a tela de confirmação do pedido!(bônus do Projeto)
@@ -63,7 +68,7 @@ function pedidoFinalizado(){
     const adress = prompt(`Qual o endereço da entrega?`)
     let msg = `Olá, gostaria de fazer o pedido:\n- Prato: ${confirmItem[0].innerHTML}\n- Bebida: ${confirmItem[1].innerHTML}\n- Sobremesa: ${confirmItem[2].innerHTML}\nTotal: ${total.innerHTML}\n\nNome: ${name}\nEndereço: ${adress}`
     msg = window.encodeURIComponent(msg);
-    window.open(`https://wa.me/5521969592572?text=${msg}`);
+    window.open(`https://wa.me/5521969592572?text=${msg}`);  
 }
 //Função para cancelar a compra!(bônus do Projeto)
 function cancelar(){
